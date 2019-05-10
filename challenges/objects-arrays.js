@@ -153,11 +153,10 @@ console.log(largerPopulation);
 The zoos need to know their total animal population across the United States.  Find the total population from all the zoos using the .reduce() method.
 
 */
-const populationTotal = 0;
-let sum = zooAnimals.reduce((acc,population)=>{
-  return acc + zooAnimals.population
-})
-console.log(populationTotal); //fix the error here 
+const populationTotal =  zooAnimals.reduce((acc,zoo)=>{
+  return acc = acc + zoo.population;
+},0)
+console.log(populationTotal); 
 
 
 /* 
