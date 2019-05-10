@@ -30,13 +30,30 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+The biggest difference between method `.forEach` & `.map` is that .forEach will execute a provided function once for each array element. `.map` creates a whole new array with the results from the function invoked on it.
+
 2. What is the difference between a function and a method?
+
+A function is a block of code created to perform specific tasks that are called within its parameters.
+A method is a function nested inside an object.
 
 3. What is closure?
 
+Closure is the combination of a function and the lexical sytax that resides in the function,  thatgives the function access to objects in the global scope.
+
 4. Describe the four rules of the 'this' keyword.
 
+Window/global object binding: when in the global scope the “this” keyword looks to the window for its information.
+
+ Implicit binding: when the dot notation is placed after the “this”
+
+ New binding: when a constructor function is used, the object that is created and returned by the  constructor function. 
+
+ Explicit binding: `this` is explicitly defined whenever `.call` or `.apply` are called.
+
 5. Why do we need super() in an extended class?
+
+ In an extended class super() gives us access to the object’s parent key value pairs. 
 
 ## Project Set up
 
@@ -47,9 +64,9 @@ Follow these steps to set up and work on your project:
 - [x] Clone your OWN version of Repo (Not Lambda's by mistake!).
 - [x] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
 - [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-- [ ] You are now ready to build this project with your preferred IDE
-- [ ] Implement the project on your Branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [x] You are now ready to build this project with your preferred IDE
+- [x] Implement the project on your Branch, committing changes regularly.
+- [x] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project:
 
