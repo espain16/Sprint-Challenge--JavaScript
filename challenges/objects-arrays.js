@@ -14,7 +14,7 @@ const dino1 = {
   length:'12m' ,
   period:'Late Cretaceous',
   growl: function(){
-    return 'RAWERSRARARWERSARARARRRR!'
+    return `RAWERSRARARWERSARARARRRR!`;
   }
 }
 // stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
@@ -51,7 +51,7 @@ console.log(dino1.period);
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-console.log(dino1.growl);//work on fixing growl function 
+console.log(dino1.growl); 
 
 
 // ==== Arrays ====
@@ -72,7 +72,9 @@ const graduates = [{"id":1,"first_name":"Cynde","university":"Missouri Southern 
 /* Request 1: Create a new array called universities that contains all the univeristies in the graduates array.  
 
 Once you have the new array created, sort the universities alphabetically and log the result. */
+
 const universities = [];
+
 console.log(universities)
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. 
@@ -112,6 +114,9 @@ The zoo wants to display both the scientific name and the animal name in front o
 
 */
 const animalNames = [];
+zooAnimals.forEach(({animal_name, scientific_name})=>{
+  animalNames.push(`${animal_name} ${scientific_name}`)
+});
 console.log(animalNames);
 
 /* Request 2: .map()    
