@@ -144,7 +144,10 @@ The zoos need to know their total animal population across the United States.  F
 
 */
 const populationTotal = 0;
-console.log(populationTotal);
+let sum = zooAnimals.reduce((acc,population)=>{
+  return acc + zooAnimals.population
+})
+console.log(populationTotal); //fix the error here 
 
 
 /* 
